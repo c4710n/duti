@@ -5,7 +5,7 @@ AC_DEFUN([DUTI_CHECK_SDK],
 	    AC_HELP_STRING([--with-macosx-sdk=DIR], [path to SDK]),
 	    macosx_sdk="$withval")
 
-    sdk_path="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs"
+    sdk_path="/Library/Developer/CommandLineTools/SDKs"
     macosx_arches="-arch i386 -arch x86_64"
 
     case "${host_os}" in
