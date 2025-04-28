@@ -13,13 +13,14 @@ Using `duti`, users can change which application acts as the default handler for
 - make
 - C compiler
 
-## Build
+## Build and Test
 
-```sh
-autoreconf -i
-./configure
-make
-sudo make install
+```console
+$ autoreconf -i
+$ ./configure
+$ make
+
+$ ./duti -h
 ```
 
 ## Usage
