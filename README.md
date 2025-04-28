@@ -74,9 +74,6 @@ See the man page for additional usage details.
   com.apple.Preview
   ```
 
-## License
+## Author
 
-`duti` was originally released into the public domain by Andrew Mortensen
-in 2008. It's provided as is without warranties of any kind. You can do
-anything you want with it. If you incorporate some or all of the code into
-another project, I'd appreciate credit for the work I've done, but that's all.
+`duti` was originally released into the public domain by [Andrew Mortensen](https://github.com/moretension) in 2008. All honor belongs to him.
