@@ -11,6 +11,7 @@ Using `duti`, users can change which application acts as the default handler for
 - Xcode Command Line Tools
 - autoconf
 - make
+- C compiler
 
 ## Build
 
