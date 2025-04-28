@@ -1,15 +1,16 @@
 # duti
 
-duti is a command-line utility for setting default applications for
-various document types on [macOS](https://www.apple.com/macos/), using Apple's
-[Uniform Type
-Identifiers](https://developer.apple.com/library/content/documentation/FileManagement/Conceptual/understanding_utis/understand_utis_intro/understand_utis_intro.html)
-(UTI).
+A command-line tool to set default applications for different UTIs on macOS.
 
-A UTI is a unique string describing the format of a file's content. For
-instance, a Microsoft Word document has a UTI of `com.microsoft.word.doc`. Using
-`duti`, the user can change which application acts as the default handler for a
-given UTI.
+Each UTI ([Uniform Type Identifiers](https://developer.apple.com/library/content/documentation/FileManagement/Conceptual/understanding_utis/understand_utis_intro/understand_utis_intro.html)) is a unique string to identify a particular file type, data type, directory or bundle type, etc. For example, a Microsoft Word document has a UTI of `com.microsoft.word.doc`.
+
+Using `duti`, users can change which application acts as the default handler for a given UTI.
+
+## Dependencies
+
+- Xcode Command Line Tools
+- autoconf
+- make
 
 ## Build
 
@@ -27,7 +28,7 @@ sudo make install
 1. standard input
 2. a settings file
 3. an XML [property list](https://en.wikipedia.org/wiki/Property_list) (plist)
-4. command-line arguments.
+4. command-line arguments
 
 A settings line, as read in cases 1 and 2, consists of an application's bundle
 ID, a UTI, and a string describing what role the application handles for the
