@@ -2,7 +2,7 @@ AC_DEFUN([DUTI_CHECK_SDK],
 [
     AC_MSG_CHECKING(which SDK to use)
     AC_ARG_WITH(macosx-sdk,
-	    AC_HELP_STRING([--with-macosx-sdk=DIR], [path to SDK]),
+	    AS_HELP_STRING([--with-macosx-sdk=DIR], [path to SDK]),
 	    macosx_sdk="$withval")
 
     sdk_path="/Library/Developer/CommandLineTools/SDKs"
@@ -73,7 +73,7 @@ AC_DEFUN([DUTI_CHECK_DEPLOYMENT_TARGET],
     AC_MSG_CHECKING(Mac OS X deployment target)
 
     AC_ARG_WITH(macosx-deployment-target,
-	    AC_HELP_STRING([--with-macosx-deployment-target=VERSION],
+	    AS_HELP_STRING([--with-macosx-deployment-target=VERSION],
 	    [OS version]), macosx_dep_target="$withval")
 
     case "${host_os}" in
